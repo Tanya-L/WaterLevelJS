@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<title>960 Grid System &mdash; Demo</title>
-<link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/text.css" />
-<link rel="stylesheet" href="css/960.css" />
-<link rel="stylesheet" href="css/lux.css" />
+  <meta charset="utf-8" />
+  <title>960 Grid System &mdash; Demo</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/text.css" />
+  <link rel="stylesheet" href="css/960.css" />
+  <link rel="stylesheet" href="css/lux.css" />
+  <script src="jquery-3.3.1.js"></script>
 </head>
+
 <body>
-  
+
   <div class="lux-header container_12">
     <div class="grid_2">
       <p class="lux">
@@ -27,40 +30,43 @@
 
   <div class="lux-body container_12">
     <div class="lux-container grid_12">
-        <button class="active" >REALTIME</button>
-        <button>YESTERDAY</button>
-        <button>LAST WEEK</button>
-        <button>LAST MONTH</button>
+      <button class="active">REALTIME</button>
+      <button>YESTERDAY</button>
+      <button>LAST WEEK</button>
+      <button>LAST MONTH</button>
     </div>
     <div class="clear"></div>
-<!-- Graph box with API start -->
+    <!-- Graph box with API start -->
     <div class="lux-container grid_12">
-        <div id="graph"></div>
+      <canvas id="myChart"></canvas>
     </div>
     <div class="clear"></div>
 
-<!-- Graph box with API end -->
+    <!-- Graph box with API end -->
     <div class="lux-container grid_12">
-        <div class="bottom-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur 
-            ultrices viverra. Donec feugiat sagittis odio vitae pellentesque. Praesent mollis 
-            faucibus lacus ac tristique.  </p>
-        </div>
-        <div class="bottom-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur 
-                ultrices viverra. Donec feugiat sagittis odio vitae pellentesque. Praesent mollis 
-                faucibus lacus ac tristique. </p> 
-        </div>
-        <div class="bottom-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur 
-                ultrices viverra. Donec feugiat sagittis odio vitae pellentesque. Praesent mollis 
-                faucibus lacus ac tristique.  </p>     
-         </div>
+      <div class="bottom-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur ultrices viverra. Donec feugiat
+          sagittis odio vitae pellentesque. Praesent mollis faucibus lacus ac tristique. </p>
+      </div>
+      <div class="bottom-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur ultrices viverra. Donec feugiat
+          sagittis odio vitae pellentesque. Praesent mollis faucibus lacus ac tristique. </p>
+      </div>
+      <div class="bottom-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum efficitur ultrices viverra. Donec feugiat
+          sagittis odio vitae pellentesque. Praesent mollis faucibus lacus ac tristique. </p>
+      </div>
     </div>
     <div class="clear"></div>
   </div>
 
 
-</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="mydata.js"></script>
+  <script src="waterlevel.js"></script>
+
 </body>
+
 </html>
