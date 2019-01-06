@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>960 Grid System &mdash; Demo</title>
+  <title>Water Level Demo</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/text.css" />
   <link rel="stylesheet" href="css/960.css" />
@@ -27,7 +27,6 @@
     <div class="clear"></div>
   </div>
 
-
   <div class="lux-body container_12">
     <div class="lux-container grid_12">
       <button class="active">REALTIME</button>
@@ -37,9 +36,15 @@
     </div>
     <div class="clear"></div>
     <!-- Graph box with API start -->
-    <div class="lux-container grid_12">
+    <div class="lux-container grid_9" id="myChartContainer">
       <canvas id="myChart"></canvas>
     </div>
+    <div class="lux-container grid_3">
+      <div id="Stations"> </div>
+      <input type="button" value="Show All &gt;&gt;" id="btn-more">
+      <input type="button" value="Show Less &lt;&lt;" id="btn-less">
+    </div>
+
     <div class="clear"></div>
 
     <!-- Graph box with API end -->
@@ -65,6 +70,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
   <script src="mydata.js"></script>
+  <!-- <script src="" -->
   <script src="waterlevel.js"></script>
 
 </body>
